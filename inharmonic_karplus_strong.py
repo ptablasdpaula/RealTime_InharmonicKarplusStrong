@@ -361,7 +361,9 @@ class InharmonicKarplusStrong:
         return filtered
 
     def _reset_state(self):
-        pass
+        self.lagrange.reset_state()
+        self.iir_filter.reset_state()
+        self.dispersion.reset_state()
 
     def _update_delay_length(self, f0: float, inharmonicity: float, damping: float):
         """Compute tuned delay length compensating for IIR and dispersion phase delay."""
