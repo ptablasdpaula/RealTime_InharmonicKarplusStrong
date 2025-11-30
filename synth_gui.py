@@ -288,8 +288,3 @@ class SynthGUI:
             self.midi_input.disconnect()
             self.virtual_midi_input.close_port()
             self.synth.stop()
-
-
-if __name__ == "__main__":
-    gui = SynthGUI()
-    gui.run()
