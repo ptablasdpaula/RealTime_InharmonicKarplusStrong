@@ -1,8 +1,5 @@
 import numpy as np
-
-def hz_to_samples(hz: float, sr: int = 16000) -> float:
-    return sr / hz
-
+from utils import hz_to_samples
 
 class DynamicDelayLine:
     def __init__(self, max_delay: int = 2000):
